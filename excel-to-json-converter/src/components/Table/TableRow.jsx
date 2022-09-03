@@ -1,7 +1,4 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-
-import { useUser } from '../../context/user-context';
+import { useUser } from "../../context/user-context";
 
 export default function TableRow({
   id,
@@ -10,7 +7,7 @@ export default function TableRow({
   email,
   gender,
   race,
-  handleIsOpen
+  handleIsOpen,
 }) {
   const { handleCurrentUser } = useUser();
 

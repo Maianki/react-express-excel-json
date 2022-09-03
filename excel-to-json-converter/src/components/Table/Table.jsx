@@ -1,12 +1,11 @@
-/* eslint-disable import/no-named-as-default-member */
-import './table.css';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import toast from 'react-hot-toast';
-import { FadeLoader } from 'react-spinners';
-import TableRow from './TableRow';
-import getRace from '../../utils/getRace';
-import Modal from '../Modal/Modal';
+import "./table.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import toast from "react-hot-toast";
+import { FadeLoader } from "react-spinners";
+import TableRow from "./TableRow";
+import getRace from "../../utils/getRace";
+import Modal from "../Modal/Modal";
 
 export default function Table() {
   const [users, setUsers] = useState(undefined);
@@ -15,7 +14,7 @@ export default function Table() {
   useEffect(() => {
     (async () => {
       try {
-        const res = await axios.get('/users');
+        const res = await axios.get("/users");
         console.log(res);
         if (res.status === 200) {
           setUsers(res.data.users);
@@ -77,7 +76,7 @@ export default function Table() {
                 last_name: lastName,
                 email,
                 gender,
-                race
+                race,
               }) => {
                 return (
                   <TableRow

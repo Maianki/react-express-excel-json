@@ -1,12 +1,9 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable react/no-array-index-key */
-import { useState } from 'react';
-import { createPortal } from 'react-dom';
-import axios from 'axios';
-import './modal.css';
-import toast from 'react-hot-toast';
-import { useUser } from '../../context/user-context';
+import { useState } from "react";
+import { createPortal } from "react-dom";
+import axios from "axios";
+import "./modal.css";
+import toast from "react-hot-toast";
+import { useUser } from "../../context/user-context";
 
 export default function Modal({ allRaces, handleIsOpen, setAllUsers }) {
   const { currentUser, handleCurrentUser } = useUser();
@@ -16,7 +13,7 @@ export default function Modal({ allRaces, handleIsOpen, setAllUsers }) {
     lastName: currentUser.lastName,
     email: currentUser.email,
     gender: currentUser.gender,
-    race: currentUser.race ?? 'Dominican (Dominican Republic)'
+    race: currentUser.race ?? "Dominican (Dominican Republic)",
   });
 
   const handleFormChange = (e) => {
@@ -30,23 +27,23 @@ export default function Modal({ allRaces, handleIsOpen, setAllUsers }) {
     if (Object.keys(currentUser).length > 0) {
       try {
         const res = await axios.post(`/users/${currentUser.id}`, {
-          ...user
+          ...user,
         });
         if (res.status === 201) {
           setAllUsers(res.data.users);
-          toast.success('User edited successfully!');
+          toast.success("User edited successfully!");
         }
       } catch (err) {
         toast.error(err.message);
       }
     } else {
       try {
-        const res = await axios.post('/users', {
-          ...user
+        const res = await axios.post("/users", {
+          ...user,
         });
         if (res.status === 201) {
           setAllUsers(res.data.users);
-          toast.success('User added successfully!');
+          toast.success("User added successfully!");
         }
       } catch (err) {
         toast.error(err.message);
@@ -118,6 +115,6 @@ export default function Modal({ allRaces, handleIsOpen, setAllUsers }) {
         </div>
       </div>
     </>,
-    document.getElementById('modal-root')
+    document.getElementById("modal-root")
   );
 }
