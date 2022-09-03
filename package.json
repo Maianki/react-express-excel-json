@@ -1,0 +1,11 @@
+{
+  "name": "excel-json",
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {
+    "start": "npm start --prefix apis",
+    "install-client": "cd excel-to-json-converter && npm install && npm run build && cd ..",
+    "install-server": "cd apis && npm install && cd .. ",
+    "heroku-postbuild": "npm run install-client && npm run install-server"
+  }
+}
