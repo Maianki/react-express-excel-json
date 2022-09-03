@@ -1,5 +1,4 @@
-
-.overlay{
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -7,70 +6,71 @@
   width: 100vw;
   height: 100vh;
   background-color: #000;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .modal-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1050;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    outline: 0;
-  }
-  
-  .modal {
-    background: white;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 5px;
-    max-width: 580px;
-    padding: 2rem;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
 
-  .btn-close{
-    position: absolute;
-    right:10px;
-    top: 10px;
-    border: none;
-    cursor: pointer;
-  }
+.modal {
+  background: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  max-width: 580px;
+  padding: 2rem;
+}
 
-  .btn-close:hover{
-    font-weight: 700;
-  }
+.btn-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  cursor: pointer;
+}
 
-  input[type="text"],input[type="email"] {
-    padding:10px;
-    margin:10px 0; 
-    border: transparent;
-    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
-    background: #fff;
-  }
+.btn-close:hover {
+  font-weight: 700;
+}
 
-  .form{
-    display: flex;
-    flex-direction: column;
-  }
+input[type='text'],
+input[type='email'] {
+  padding: 10px;
+  margin: 10px 0;
+  border: transparent;
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+  background: #fff;
+}
 
-  select {
-    width: 100%;
-    padding:10px;
-    border: none;
-    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
-  }
+.form {
+  display: flex;
+  flex-direction: column;
+}
 
-  .btn-submit{
-    border: none;
-    margin-top: 1rem;
-    padding: 8px;
-    cursor: pointer;
-    background-color: var(--BTN-EDIT-COLOR);
-    color: #FFF;
-    border-radius: 5px;
-  }
+select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.btn-submit {
+  border: none;
+  margin-top: 1rem;
+  padding: 8px;
+  cursor: pointer;
+  background-color: var(--BTN-EDIT-COLOR);
+  color: #fff;
+  border-radius: 5px;
+}

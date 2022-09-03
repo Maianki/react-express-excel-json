@@ -4,11 +4,5 @@
   "semi": true,
   "singleQuote": true,
   "trailingComma": "none",
-  "printWidth": 80,
-  "prettier/prettier": [
-    "error",
-    {
-      "endOfLine": "auto"
-    }
-  ]
+  "printWidth": 80
 }

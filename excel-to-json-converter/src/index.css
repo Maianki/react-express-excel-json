@@ -1,15 +1,15 @@
-:root{
-  --TABLE-BG-COLOR : #f3f4f6;
+:root {
+  --TABLE-BG-COLOR: #f3f4f6;
   --TABLE-BORDER-COLOR: #e9eaec;
   --BTN-EDIT-COLOR: #4f46e5;
   --TABLE-DATA-COLOR: #8f949e;
 }
 
-.heading{
+.heading {
   text-align: center;
 }
 
-.users-data{
+.users-data {
   background-color: var(--TABLE-BG-COLOR);
   min-width: 720px;
   max-width: 70vw;
@@ -19,7 +19,7 @@
   margin: 0 auto;
 }
 
-.spinner{
+.spinner {
   display: flex;
   justify-content: center;
   padding: 1rem;
