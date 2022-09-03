@@ -1,2 +1,2 @@
 # react-express-excel-json
-A simple MERN webapp
+A simple React app with APIs built in express
