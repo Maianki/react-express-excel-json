@@ -1,0 +1,66 @@
+
+.table{
+    border: 1px solid var(--TABLE-BORDER-COLOR);
+    padding:1rem;
+    margin: 0 auto;
+    background-color: #FFF;
+    max-width: 720px;
+    min-width: 640px;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+tr{
+    border: 1px solid var(--TABLE-BORDER-COLOR);
+}
+
+thead{
+    padding:1rem;
+}
+
+.table-heading{
+    border: 1px solid var(--TABLE-BORDER-COLOR);
+    padding-top: 80px;
+}
+
+tr > th{
+    padding: 10px;
+}
+
+tr>td{
+    padding: 10px;
+    text-align: center;
+}
+
+.row-edit{
+    color: var(--BTN-EDIT-COLOR);
+    cursor: pointer;
+}
+
+.row-email,
+.row-gender,
+.row-race,
+.description > p{
+    color: var(--TABLE-DATA-COLOR);
+    font-size: small;
+}
+
+.description{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-add-user{
+    background-color: var(--BTN-EDIT-COLOR);
+    border: none;
+    border-radius: 5px;
+    padding: 6px 8px;
+    margin:10px;
+    color: #FFF;
+    cursor: pointer;
+    opacity: .9;
+}
+
+.btn-add-user:hover{
+    opacity: 1;
+}
